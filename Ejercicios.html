@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8_ejercicios</title>
+</head>
+<body>
+    <h1>Ejercicio N° 01</h1>
+        <p>Realizar las operaciones básicas en un <br>
+             script con variables ya asignadas</p>
+        <h3>SUMA</h3>
+            <script>
+                var num1 = 5;
+                var num2 = 4;
+                document.write(num1," + ",num2," = ")
+                document.write(num1 + num2)
+            </script>
+        <h3>RESTA</h3>
+            <script>
+                var num1 = 50;
+                var num2 = 45;
+                document.write(num1," - ",num2," = ");
+                document.write(num1 - num2);
+            </script>
+        <h3>MULTIPLICACION</h3>
+        <script>
+            var num1 = 12;
+            var num2 = 10;
+            document.write(num1," * ",num2," = ");
+            document.write(num1 * num2);
+        </script>
+        <h3>DIVISION</h3>
+        <script>
+            var num1 = 600;
+            var num2 = 6;
+            document.write(num1," / ",num2," = ");
+            document.write(num1 / num2);
+        </script>
+    
+    <h1>Ejercicio N° 02</h1>
+        <p>Haz un script que te calcule el precio total que se pagara por la compra.  <br> 
+         Entendiendo que el precio del producto es S/. 420.00 y su igv es de 25%.</p>
+         <script>
+            var producto = 420;
+            var total = producto * .25;
+            document.write("total a pagar es: S/.",total)
+         </script>    
+
+    <h1>Ejercicio N° 03</h1>
+        <p> Si el lado de un cuadrado es 24, calcule el área y el perímetro del cuadrado.</p>
+        <script>
+            var lado = 24;
+            var area = lado*lado;
+            var perimetro = 4 * lado;
+            document.write("el Area es: ",area," Y el perimetro es: ",perimetro)
+        </script>
+
+    <h1>Ejercicio N° 04</h1>
+        <p>Escribir un programa script que lea el nombre del usuario y salude con un <br>
+         "Como estas mi querido …" seguido del nombre del usuario.</p>
+         <script>
+            var nombre = prompt("ingrese su nombre: ");
+            document.write("Como estas mi querido "+ nombre);
+         </script>
+    <h1>Ejercicio N° 05</h1>
+        <p>Pedir al usuario que teclee tres números enteros y el script mostrará <br>
+        como resultado el valor medio de los tres.</p>
+        <script>
+            var num1 = parseInt(prompt("Ingresa un numero para la media"));
+            var num2 = parseInt(prompt("Ingresa un numero para la media"));
+            var num3 = parseInt(prompt("Ingresa un numero para la media"));
+            var media =(num1+num2+num3)/3;
+            document.write("La media es "+media);
+        </script>
+    <h1>Ejercicio N° 06</h1>
+        <p>Convertir a segundos una medida de tiempo dada en horas y minutos <br>
+             (4 horas y 20 minutos)</p>
+        <script>
+           var min = 260 ;
+           var seg = min * 60;
+           document.write("son: ",seg, "segundos.");
+        </script>
+    <h1>Ejercicio N° 07</h1>
+        <p>Una tortilla de espinacas lleva 200 gramos de espinacas por persona. <br>
+             Por cada kilo de espinacas se necesitan 5 huevos y 300 gramos de queso. <br>
+             Escribe un script que dado el número de comensales calcule las cantidades <br>
+             de ingredientes necesarias(PARA 5 COMENSALES)</p>
+        <script>
+            var persona = parseInt(prompt("ingrese numero de personas:"));
+            var tortilla = 200 * persona;
+            var huevos = persona*200/200;
+            var queso = 60 * persona;
+            document.write("Cantidad de espinaca : ",tortilla,"g."+"<br>");
+            document.write("Cantidad de huevos : ",huevos+"<br>"); 
+            document.write("Cantidad de queso : ",queso,"g.");
+        </script>
+    <h1>Ejercicio N° 08</h1>
+        <p>Escribir un programa que intercambie el valor de dos variables. Al final la <br>
+            primera variable debe tener el valor de la segunda y la segunda el valor de la primera. <br>
+            Es decir si: <br>
+            var n1 = 2 <br>
+            var n2 = 4; al final debe ser <br>
+            var n1 = 4 <br>
+            var n2 = 2;</p>
+            <script>
+                var num1 = 2;
+                var num2 = 4;
+                document.write("num1= ",num1 + "<br>");
+                document.write("num2= ",num2 + "<br>");
+                
+                a=num1;
+                num1=num2;
+                num2=a;
+
+                document.write("num1= ",num1+"<br>");
+                document.write("num2= ",num2+"<br>");
+            </script>
+            
+</body>
+</html>
